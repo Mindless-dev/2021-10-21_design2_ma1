@@ -1,0 +1,13 @@
+$colours: (
+  primary: #b7b7b7,
+  secondary: #5c4040,
+);
+
+@function getColour($colour) {
+  @return map-get($colours, $colour);
+}
+
+@font-face {
+  font-family: roboto;
+  src: url("../../fonts/Roboto-Light.ttf");
+}

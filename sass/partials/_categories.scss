@@ -1,0 +1,52 @@
+.livingroom {
+  background-image: url("../../images/texture/livingroom.jpg");
+}
+.kitchen {
+  background-image: url("../../images/texture/kitchen.jpg");
+}
+.bedroom {
+  background-image: url("../../images/texture/bedroom.jpg");
+}
+
+.kitchen,
+.livingroom,
+.bedroom {
+  display: block;
+  opacity: 80%;
+  height: 498px;
+  width: 398px;
+  background-repeat: no-repeat;
+}
+.kitchen:hover,
+.bedroom:hover,
+.livingroom:hover {
+  opacity: 100%;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.category {
+  padding: 1.4em;
+}
+
+.categories-link {
+  background-color: #5c4040;
+  color: white;
+  text-decoration: none;
+  padding: 1.2em 5.5em;
+  margin: auto;
+}
+
+.categories-link:hover {
+  background-color: darken(getColour(secondary), 5);
+}

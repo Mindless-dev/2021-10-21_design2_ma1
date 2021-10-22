@@ -1,0 +1,193 @@
+@font-face {
+  font-family: roboto;
+  src: url("../../fonts/Roboto-Light.ttf");
+}
+
+body {
+  margin: 0;
+  background-image: url("../../images/texture/texture-homedecor.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: #b7b7b7;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 95%;
+  margin: auto;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  padding-top: 2.4em;
+}
+
+li a {
+  color: #5c4040;
+  text-decoration: none;
+  margin: 10px;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  color: #020101;
+}
+
+.logo img {
+  width: 70%;
+  margin: 10px;
+}
+
+.livingroom {
+  background-image: url("../../images/texture/livingroom.jpg");
+}
+
+.kitchen {
+  background-image: url("../../images/texture/kitchen.jpg");
+}
+
+.bedroom {
+  background-image: url("../../images/texture/bedroom.jpg");
+}
+
+.kitchen,
+.livingroom,
+.bedroom {
+  display: block;
+  opacity: 80%;
+  height: 498px;
+  width: 398px;
+  background-repeat: no-repeat;
+}
+
+.kitchen:hover,
+.bedroom:hover,
+.livingroom:hover {
+  opacity: 100%;
+}
+
+.content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+}
+
+.category {
+  padding: 1.4em;
+}
+
+.categories-link {
+  background-color: #5c4040;
+  color: white;
+  text-decoration: none;
+  padding: 1.2em 5.5em;
+  margin: auto;
+}
+
+.categories-link:hover {
+  background-color: #4d3636;
+}
+
+.heroImage {
+  background-image: url("../../images/texture/homedecor-hero-image.jpg");
+  width: 100%;
+  height: 600px;
+  background-position: top center;
+}
+
+.introduction {
+  text-align: center;
+  margin: 3.5em auto;
+}
+
+.introduction p {
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+h1,
+h2,
+nav,
+.categories-link {
+  font-family: "Noto Serif Display", serif;
+}
+
+p {
+  font-family: roboto;
+}
+
+h1 {
+  font-size: 4.5em;
+  margin-bottom: 3px;
+}
+
+h2 {
+  margin-top: 5px;
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1.4em;
+}
+
+h1,
+h2,
+nav {
+  color: #5c4040;
+}
+
+li a {
+  font-size: 1.2em;
+}
+
+.categories-link {
+  font-size: 1.4em;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+footer span {
+  margin: 10px;
+}
+/*# sourceMappingURL=styles.css.map */
