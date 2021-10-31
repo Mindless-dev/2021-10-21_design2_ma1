@@ -1,7 +1,8 @@
 h1,
 h2,
 nav,
-.categories-link {
+.categories-link,
+header {
   font-family: "Noto Serif Display", serif;
 }
 
@@ -10,8 +11,12 @@ p {
 }
 
 h1 {
-  font-size: 4.5em;
-  margin-bottom: 3px;
+  text-align: center;
+  font-size: 40px;
+  @media (min-width: 500px) {
+    font-size: 4.5em;
+    margin-bottom: 3px;
+  }
 }
 h2 {
   margin-top: 5px;
@@ -30,7 +35,7 @@ nav {
 
 li {
   a {
-    font-size: 1.2em;
+    font-size: 22px;
   }
 }
 

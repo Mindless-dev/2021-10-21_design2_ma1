@@ -13,9 +13,15 @@
 .bedroom {
   display: block;
   opacity: 80%;
-  height: 498px;
-  width: 398px;
-  background-repeat: no-repeat;
+  height: 350px;
+  width: 300px;
+  @media (min-width: 500px) {
+    display: block;
+    opacity: 80%;
+    height: 498px;
+    width: 398px;
+    background-repeat: no-repeat;
+  }
 }
 .kitchen:hover,
 .bedroom:hover,
@@ -32,6 +38,7 @@
 .categories {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: auto;
 }
 
@@ -43,8 +50,11 @@
   background-color: #5c4040;
   color: white;
   text-decoration: none;
-  padding: 1.2em 5.5em;
   margin: auto;
+  padding: 1.2em 3em;
+  @media (min-width: 500px) {
+    padding: 1.2em 5.5em;
+  }
 }
 
 .categories-link:hover {

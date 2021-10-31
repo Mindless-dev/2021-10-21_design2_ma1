@@ -1,21 +1,29 @@
 header {
   background-color: getColour(primary);
+  @media (min-width: 500px) {
+    display: flex;
+  }
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  width: 95%;
-  margin: auto;
-
+  display: none;
+  align-self: flex-end;
+  margin: 0px 20px 20px auto;
   li {
     list-style: none;
   }
-
   ul {
     display: flex;
     padding: 0;
     padding-top: 2.4em;
+    top: -10px;
+    position: relative;
+    margin-right: 20px;
+  }
+
+  @media (min-width: 500px) {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -35,7 +43,44 @@ li {
 }
 .logo {
   img {
-    width: 70%;
+    max-width: 100px;
     margin: 10px;
+  }
+}
+
+.displayNav {
+  @media (max-width: 500px) {
+    display: flex;
+    position: absolute;
+    background-color: darken(getColour(primary), 10);
+    width: 100%;
+    z-index: 1;
+
+    ul {
+      flex-direction: column;
+      margin: auto;
+      padding: 0px;
+      font-size: 2.5em;
+      text-align: center;
+
+      img {
+        width: 40%;
+      }
+    }
+  }
+}
+
+.hamburgerIcon {
+  float: right;
+  height: 60px;
+  width: 60px;
+  margin: 30px 20px 0px 0px;
+  background: none;
+  border: none;
+  background-image: URL("../icons/hamburgerMenu.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: 500px) {
+    display: none;
   }
 }
