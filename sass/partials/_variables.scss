@@ -6,8 +6,3 @@ $colours: (
 @function getColour($colour) {
   @return map-get($colours, $colour);
 }
-
-@font-face {
-  font-family: roboto;
-  src: url("../../fonts/Roboto-Light.ttf");
-}

@@ -1,8 +1,3 @@
-@font-face {
-  font-family: roboto;
-  src: url("../../fonts/Roboto-Light.ttf");
-}
-
 body {
   margin: 0;
   background-image: url("../../images/texture/homedecor-texture.jpg");
@@ -217,19 +212,23 @@ li a:hover {
 
 .introduction p {
   max-width: 800px;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 h1,
 h2,
 nav,
-.categories-link,
 header {
   font-family: "Noto Serif Display", serif;
 }
 
-p {
+p,
+.categories-link {
   font-family: roboto;
+}
+
+p {
+  font-weight: 300;
 }
 
 h1 {
